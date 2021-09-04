@@ -16,7 +16,7 @@ const displayTemparature = temparature => {
     setInnerText('city', temparature.name)
     setInnerText('temperature', temparature.main.temp)
     setInnerText('sky-condition', temparature.weather[0].main)
-    const url = `https://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`
+    const url = `http://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png`
     const images = document.getElementById('icons')
     images.setAttribute('src', url)
 }
